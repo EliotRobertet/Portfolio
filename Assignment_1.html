@@ -19,28 +19,20 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<h1 id="logo"><a href="index.html">Eliot Robertet</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li>
-								<a href="#">Layouts</a>
+								<a href="#">Assignments</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
+									<li><a href="Assignment_1.html">Assignment 1</a></li>
+									<li><a href="Assignment_2.html">Assignment 2</a></li>
+									<li><a href="Assignment_3.html">Assignment 3</a></li>
+									
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="Eliot_Robertet_CV.pdf">Curriculum Vitae</a></li>
 							
 						</ul>
 					</nav>
@@ -77,7 +69,9 @@
 								</header>
 								<p>Before starting the website, I carefully reviewed the <a href="https://haskoliislands.instructure.com/courses/33802/assignments/149296" target="_blank">assignment description</a>, watched related tutorial videos on <a href="https://www.youtube.com" target="_blank">YouTube</a>, and studied a comprehensive guide on HTML available at <a href="https://www.w3schools.com" target="_blank">w3schools</a>. These resources provided a solid foundation for understanding the requirements and technical aspects of the project.</p>
 								<p>With a clear vision of how I wanted the website to appear, I proceeded to download the recommended tools for the assignment. I installed <a href="https://brackets.io" target="_blank">Brackets</a>, a user-friendly code editor offering a live preview feature, which was instrumental in the website's development. Additionally, I created a <a href="https://github.com" target="_blank">GitHub account</a> to host the website and installed <a href="https://git-scm.com/" target="_blank">Git Bash</a> from Git to upload the project files to a repository.</p>
-								
+								<div style="text-align: center; margin-top: 20px;">
+								<a href="https://youtube.com/playlist?list=PLGuNTpc293hpIpAVSJ3-SgNolCTa1BfJE" target="_blank" class="button" style="display: inline-block; padding: 15px 30px; font-size: 18px; background-color: darkred; color: white; text-decoration: none; border-radius: 5px;">Youtube video of the teacher's instructions</a>
+								</div>
 								<h4>Development Process</h4>
 								<p>Once the preparation phase was complete, I focused on selecting a suitable website template from <a href="https://html5up.net/" target="_blank">HTML5UP</a>. My primary goal was to find a template that was simple, visually appealing, and functional, including a drop-down menu to organize and access all assignments. I selected the Landed template, which aligned perfectly with these criteria.
 									I downloaded the template and began refining it using Brackets. The customization process included:</p>
@@ -102,331 +96,91 @@
 								<p style="text-align: center; margin-top: 10px;">The CV in question</p>
 							</div>
 								<h4>Publishing the website </h4>
-								<p></p>
+								<p>After completing the design of my website, I published it by uploading the project to GitHub using Git Bash. First, I created a <a href="https://github.com/EliotRobertet/Portfolio.git" target="_blank">repository</a> on GitHub, set it to public, and assigned it an appropriate name. Next, I opened Git Bash, which I had installed during the preparation phase, directly in the website’s directory. To do this, I right-clicked inside the website’s folder and selected "Open Git Bash here."</p>
+								<span class="image fit">
+									<img src="images/Git_bash.png" alt="CV Preview" />
+								</span>
+								<p style="text-align: center; margin-top: 10px;">Here you can see that you have to right click in the folder and select: "Open Git Bash here"</p><section>
+    <h2>Uploading the Website to GitHub Using Git Bash</h2>
+    <p>Below is a detailed step-by-step explanation of how I uploaded my website to GitHub using Git Bash. Each step is accompanied by the corresponding command or action.</p>
+
+<div style="text-align: center;">
+    <img src="images/code.png" alt="Picture of Git Bash Code" width="300" />
+    <p style="font-size: 14px; color: gray;">This is a picture of the Git Bash code, which will be described later on.</p>
+</div>
+
+
+    <h3>Step 1: Initialize a Git Repository</h3>
+    <p>To begin, I opened Git Bash in the folder containing my website files and initialized a Git repository. This sets up Git tracking for the folder.</p>
+    <pre><code>
+git init
+    </code></pre>
+
+    <h3>Step 2: Link the Repository to GitHub</h3>
+    <p>I created a new repository on GitHub and linked it to my local repository using the following command:</p>
+    <pre><code>
+git remote add origin https://github.com/EliotRobertet/Portfolio.git
+   </code> </pre>
+    <p>To confirm the link, I checked the remote repositories with:</p>
+    <pre><code>
+git remote -v
+    </code></pre>
+
+    <h3>Step 3: Stage All Files</h3>
+    <p>I staged all files in my directory to prepare them for the initial commit. The command I used ensures all files in the directory are included:</p>
+    <pre><code>
+git add .
+   </code> </pre>
+
+    <h3>Step 4: Commit the Files</h3>
+    <p>I committed the staged files with a descriptive message. Initially, I encountered an error due to the absence of author identity configuration:</p>
+    <pre><code>
+git commit -m "Initial commit: Upload website files"
+    </code></pre>
+    <p>To resolve the issue, I set my global username and email configuration:</p>
+    <pre><code>
+git config --global user.name "EliotRobertet"
+git config --global user.email "eliot210203@gmail.com"
+   </code> </pre>
+    <p>After setting the identity, I successfully committed the files:</p>
+    <pre><code>
+git commit -m "Initial commit: Upload website files"
+    </code></pre>
+
+    <h3>Step 5: Push the Files to GitHub</h3>
+    <p>Finally, I pushed the committed files to the GitHub repository using the following command:</p>
+    <pre><code>
+git push -u origin master
+    </code></pre>
+
+    <h3>Step 6: Verify the Upload</h3>
+    <p>I visited my repository on GitHub (<a href="https://github.com/EliotRobertet/Portfolio" target="_blank">https://github.com/EliotRobertet/Portfolio</a>) to confirm that all files were successfully uploaded.</p>
+
+    <h3>Conclusion</h3>
+    <p>This process efficiently uploaded my website files to GitHub while maintaining version control using Git. The commands and configurations ensure seamless updates in the future.</p>
+</section>
+
+<h3>Deploying the page</h3>
+
 								
-								<hr />
+								<p>After successfully pushing the files using Git Bash, they will appear in the repository you created on GitHub. To publish the website, navigate to Settings &gt; Pages in the repository. Ensure that the main branch is selected and that the root folder is specified. Once these settings are saved, a link to your live website will be generated. If it does not appear immediately, refresh the settings page to view the link.
+</p>
+								
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
+    <div style="text-align: center;">
+        <img src="images/Root.png" alt="Description of Picture 1" style="width: 300px; height: auto;" />
+        <p style="font-size: 14px; color: gray;">The master branch is selected and the root folder.</p>
+    </div>
+    <div style="text-align: center;">
+        <img src="images/websitegoinglive.png" alt="Description of Picture 2" style="max-width: 300px; max-height: 300px; object-fit: contain;" />
+        <p style="font-size: 14px; color: gray;">Here you can see the website is going live.
+		</p>
+    </div>
+</div>
 
-														<hr />
 
-								<h4>Blockquote</h4>
-								<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-
-								<h4>Preformatted</h4>
-								<pre><code>i = 0;
-
-	while (!deck.isInOrder()) {
-	    print 'Iteration ' + i;
-	    deck.shuffle();
-	    i++;
-	}
-
-	print 'It took ' + i + ' iterations to sort the deck.';
-	</code></pre>
 							</section>
 
-						<!-- Lists -->
-							<section>
-								<h3>Lists</h3>
-								<div class="row">
-									<div class="col-6 col-12-xsmall">
-
-										<h4>Unordered</h4>
-										<ul>
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Sagittis adipiscing lorem eleifend.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-										</ul>
-
-										<h4>Alternate</h4>
-										<ul class="alt">
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Sagittis adipiscing lorem eleifend.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-											<li>Lobortis adipiscing condimentum lorem.</li>
-											<li>Integer eleifend erat sed accumsan.</li>
-										</ul>
-
-									</div>
-									<div class="col-6 col-12-xsmall">
-
-										<h4>Ordered</h4>
-										<ol>
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Etiam vel felis at lorem sed viverra.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-											<li>Dolor pulvinar etiam magna etiam.</li>
-											<li>Etiam vel felis at lorem sed viverra.</li>
-											<li>Felis enim feugiat dolore viverra.</li>
-										</ol>
-
-										<h4>Icons</h4>
-										<ul class="icons">
-											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-										</ul>
-										<ul class="icons">
-											<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-											<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-											<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-											<li><a href="#" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
-											<li><a href="#" class="icon brands alt fa-dribbble"><span class="label">Dribbble</span></a></li>
-											<li><a href="#" class="icon brands alt fa-tumblr"><span class="label">Tumblr</span></a></li>
-										</ul>
-
-									</div>
-								</div>
-
-								<h4>Actions</h4>
-								<ul class="actions">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<div class="row">
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary">Default</a></li>
-											<li><a href="#" class="button">Default</a></li>
-										</ul>
-									</div>
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary small">Small</a></li>
-											<li><a href="#" class="button small">Small</a></li>
-										</ul>
-									</div>
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary fit">Default</a></li>
-											<li><a href="#" class="button fit">Default</a></li>
-										</ul>
-									</div>
-									<div class="col-3 col-6-medium col-12-xsmall">
-										<ul class="actions stacked">
-											<li><a href="#" class="button primary small fit">Small</a></li>
-											<li><a href="#" class="button small fit">Small</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
-
-						<!-- Table -->
-							<section>
-								<h3>Table</h3>
-								<h4>Default</h4>
-								<div class="table-wrapper">
-									<table>
-										<thead>
-											<tr>
-												<th>Name</th>
-												<th>Description</th>
-												<th>Price</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Item 1</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 2</td>
-												<td>Vis ac commodo adipiscing arcu aliquet.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 3</td>
-												<td> Morbi faucibus arcu accumsan lorem.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 4</td>
-												<td>Vitae integer tempus condimentum.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 5</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2"></td>
-												<td>100.00</td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-								<h4>Alternate</h4>
-								<div class="table-wrapper">
-									<table class="alt">
-										<thead>
-											<tr>
-												<th>Name</th>
-												<th>Description</th>
-												<th>Price</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>Item 1</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 2</td>
-												<td>Vis ac commodo adipiscing arcu aliquet.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 3</td>
-												<td> Morbi faucibus arcu accumsan lorem.</td>
-												<td>29.99</td>
-											</tr>
-											<tr>
-												<td>Item 4</td>
-												<td>Vitae integer tempus condimentum.</td>
-												<td>19.99</td>
-											</tr>
-											<tr>
-												<td>Item 5</td>
-												<td>Ante turpis integer aliquet porttitor.</td>
-												<td>29.99</td>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<td colspan="2"></td>
-												<td>100.00</td>
-											</tr>
-										</tfoot>
-									</table>
-								</div>
-							</section>
-
-						<!-- Buttons -->
-							<section>
-								<h3>Buttons</h3>
-								<ul class="actions">
-									<li><a href="#" class="button primary">Primary</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions">
-									<li><a href="#" class="button primary large">Large</a></li>
-									<li><a href="#" class="button">Default</a></li>
-									<li><a href="#" class="button small">Default</a></li>
-								</ul>
-								<div class="row">
-									<div class="col-6 col-12-xsmall">
-										<ul class="actions fit">
-											<li><a href="#" class="button primary fit">Fit</a></li>
-											<li><a href="#" class="button fit">Fit</a></li>
-										</ul>
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<ul class="actions fit small">
-											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-											<li><a href="#" class="button fit small">Fit + Small</a></li>
-										</ul>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-									<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-								</ul>
-								<ul class="actions">
-									<li><span class="button primary disabled">Primary</span></li>
-									<li><span class="button disabled">Default</span></li>
-								</ul>
-							</section>
-
-						<!-- Form -->
-							<section>
-								<h3>Form</h3>
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall">
-											<input type="text" name="name" id="name" value="" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-xsmall">
-											<input type="email" name="email" id="email" value="" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<select name="category" id="category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-										<div class="col-4 col-12-medium">
-											<input type="radio" id="priority-low" name="priority" checked>
-											<label for="priority-low">Low Priority</label>
-										</div>
-										<div class="col-4 col-12-medium">
-											<input type="radio" id="priority-normal" name="priority">
-											<label for="priority-normal">Normal Priority</label>
-										</div>
-										<div class="col-4 col-12-medium">
-											<input type="radio" id="priority-high" name="priority">
-											<label for="priority-high">High Priority</label>
-										</div>
-										<div class="col-6 col-12-medium">
-											<input type="checkbox" id="copy" name="copy">
-											<label for="copy">Email me a copy of this message</label>
-										</div>
-										<div class="col-6 col-12-medium">
-											<input type="checkbox" id="human" name="human" checked>
-											<label for="human">I am a human and not a robot</label>
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-
-						<!-- Image -->
-							<section>
-								<h3>Image</h3>
-								<h4>Fit</h4>
-								<div class="box alt">
-									<div class="row gtr-50 gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/pic07.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-										<div class="col-4 col-6-xsmall"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									</div>
-								</div>
-
-								<h4>Left &amp; Right</h4>
-								<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.</p>
-								<p><span class="image right"><img src="images/pic08.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam. Cras aliquet accumsan curae accumsan arcu amet egestas placerat odio morbi mi adipiscing col morbi felis faucibus in gravida sollicitudin interdum commodo. Ante aliquam vis iaculis accumsan lorem ipsum dolor sit amet nullam.</p>
-							</section>
 
 					</div>
 				</div>
@@ -434,12 +188,10 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/eliot-robertet" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/EliotRobertet" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:eliot210203@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
