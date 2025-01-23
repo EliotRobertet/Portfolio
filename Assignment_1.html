@@ -64,7 +64,7 @@
 								</header>
 								<p>The initial assignment for the course VÉL608G Modern Manufacturing Processes involved creating a website to serve as a portfolio for the course's assignments while gaining familiarity with Git. This website showcases the process of its creation, detailing the steps taken and challenges encountered along the way.</p>
 								<header>
-									<h4>Preparation and Research</h4>
+									<h3>Preparation and Research</h3>
 								
 								</header>
 								<p>Before starting the website, I carefully reviewed the <a href="https://haskoliislands.instructure.com/courses/33802/assignments/149296" target="_blank">assignment description</a>, watched related tutorial videos on <a href="https://www.youtube.com" target="_blank">YouTube</a>, and studied a comprehensive guide on HTML available at <a href="https://www.w3schools.com" target="_blank">w3schools</a>. These resources provided a solid foundation for understanding the requirements and technical aspects of the project.</p>
@@ -72,7 +72,7 @@
 								<div style="text-align: center; margin-top: 20px;">
 								<a href="https://youtube.com/playlist?list=PLGuNTpc293hpIpAVSJ3-SgNolCTa1BfJE" target="_blank" class="button" style="display: inline-block; padding: 15px 30px; font-size: 18px; background-color: darkred; color: white; text-decoration: none; border-radius: 5px;">Youtube video of the teacher's instructions</a>
 								</div>
-								<h4>Development Process</h4>
+								<h3>Development Process</h3>
 								<p>Once the preparation phase was complete, I focused on selecting a suitable website template from <a href="https://html5up.net/" target="_blank">HTML5UP</a>. My primary goal was to find a template that was simple, visually appealing, and functional, including a drop-down menu to organize and access all assignments. I selected the Landed template, which aligned perfectly with these criteria.
 									I downloaded the template and began refining it using Brackets. The customization process included:</p>
 								<ul>
@@ -81,7 +81,7 @@
 								<li>Updated all placeholder texts on the homepage and menu to reflect the purpose and content of the portfolio.</li>
 								<li>Linked footer icons to their corresponding destinations on every page.</li>
 </ul>
-								<h4>The CV</h4>
+								<h3>The CV</h3>
 								<p>The assignment required linking a CV to the website. To achieve this, I uploaded my CV in PDF format to the project folder and created a button on the homepage that links to the file. Below is the HTML code used to implement the button:</p>
 								<pre><code>
 &lt;a href="cv.pdf" class="button primary" target="_blank"&gt;View My CV&lt;/a&gt;
@@ -95,13 +95,13 @@
 								</span>
 								<p style="text-align: center; margin-top: 10px;">The CV in question</p>
 							</div>
-								<h4>Publishing the website </h4>
+								<h3>Publishing the website </h3>
 								<p>After completing the design of my website, I published it by uploading the project to GitHub using Git Bash. First, I created a <a href="https://github.com/EliotRobertet/Portfolio.git" target="_blank">repository</a> on GitHub, set it to public, and assigned it an appropriate name. Next, I opened Git Bash, which I had installed during the preparation phase, directly in the website’s directory. To do this, I right-clicked inside the website’s folder and selected "Open Git Bash here."</p>
 								<span class="image fit">
 									<img src="images/Git_bash.png" alt="CV Preview" />
 								</span>
 								<p style="text-align: center; margin-top: 10px;">Here you can see that you have to right click in the folder and select: "Open Git Bash here"</p><section>
-    <h2>Uploading the Website to GitHub Using Git Bash</h2>
+    <h3>Uploading the Website to GitHub Using Git Bash</h3>
     <p>Below is a detailed step-by-step explanation of how I uploaded my website to GitHub using Git Bash. Each step is accompanied by the corresponding command or action.</p>
 
 <div style="text-align: center;">
@@ -110,13 +110,13 @@
 </div>
 
 
-    <h3>Step 1: Initialize a Git Repository</h3>
+    <h4>Step 1: Initialize a Git Repository</h4>
     <p>To begin, I opened Git Bash in the folder containing my website files and initialized a Git repository. This sets up Git tracking for the folder.</p>
     <pre><code>
 git init
     </code></pre>
 
-    <h3>Step 2: Link the Repository to GitHub</h3>
+    <h4>Step 2: Link the Repository to GitHub</h4>
     <p>I created a new repository on GitHub and linked it to my local repository using the following command:</p>
     <pre><code>
 git remote add origin https://github.com/EliotRobertet/Portfolio.git
@@ -126,13 +126,13 @@ git remote add origin https://github.com/EliotRobertet/Portfolio.git
 git remote -v
     </code></pre>
 
-    <h3>Step 3: Stage All Files</h3>
+    <h4>Step 3: Stage All Files</h4>
     <p>I staged all files in my directory to prepare them for the initial commit. The command I used ensures all files in the directory are included:</p>
     <pre><code>
 git add .
    </code> </pre>
 
-    <h3>Step 4: Commit the Files</h3>
+    <h4>Step 4: Commit the Files</h4>
     <p>I committed the staged files with a descriptive message. Initially, I encountered an error due to the absence of author identity configuration:</p>
     <pre><code>
 git commit -m "Initial commit: Upload website files"
@@ -147,13 +147,13 @@ git config --global user.email "eliot210203@gmail.com"
 git commit -m "Initial commit: Upload website files"
     </code></pre>
 
-    <h3>Step 5: Push the Files to GitHub</h3>
+    <h4>Step 5: Push the Files to GitHub</h4>
     <p>Finally, I pushed the committed files to the GitHub repository using the following command:</p>
     <pre><code>
 git push -u origin master
     </code></pre>
 
-    <h3>Step 6: Verify the Upload</h3>
+    <h4>Step 6: Verify the Upload</h4>
     <p>I visited my repository on GitHub (<a href="https://github.com/EliotRobertet/Portfolio" target="_blank">https://github.com/EliotRobertet/Portfolio</a>) to confirm that all files were successfully uploaded.</p>
 
     <h3>Conclusion</h3>
@@ -166,17 +166,65 @@ git push -u origin master
 								<p>After successfully pushing the files using Git Bash, they will appear in the repository you created on GitHub. To publish the website, navigate to Settings &gt; Pages in the repository. Ensure that the main branch is selected and that the root folder is specified. Once these settings are saved, a link to your live website will be generated. If it does not appear immediately, refresh the settings page to view the link.
 </p>
 								
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
-    <div style="text-align: center;">
-        <img src="images/Root.png" alt="Description of Picture 1" style="width: 300px; height: auto;" />
+<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+    <div style="text-align: center; flex: 1; max-width: 45%;">
+        <img src="images/Root.png" alt="Description of Picture 1" style="width: 100%; height: auto;" />
         <p style="font-size: 14px; color: gray;">The master branch is selected and the root folder.</p>
     </div>
-    <div style="text-align: center;">
-        <img src="images/websitegoinglive.png" alt="Description of Picture 2" style="max-width: 300px; max-height: 300px; object-fit: contain;" />
-        <p style="font-size: 14px; color: gray;">Here you can see the website is going live.
-		</p>
+    <div style="text-align: center; flex: 1; max-width: 45%;">
+        <img src="images/websitegoinglive.png" alt="Description of Picture 2" style="width: 100%; height: auto;" />
+        <p style="font-size: 14px; color: gray;">Here you can see the website is going live.</p>
     </div>
 </div>
+								
+				
+<section>
+    <h3>How We Updated the Website Using Git Bash</h3>
+    <p>As part of the assignment, we learned how to update the website efficiently using Git Bash. Below is a step-by-step explanation of how we pushed updates to the repository and deployed them to the live site:</p>
+    <ol>
+        <li>
+            <strong>Opened Git Bash:</strong> 
+            After making changes to the website files, we navigated to the project folder, right-clicked inside the folder, and selected <em>"Open Git Bash here."</em>
+        </li>
+    </ol>
+    <div style="text-align: center; margin: 10px 0;">
+        <img src="images/Git_bash.png" alt="Opening Git Bash in folder" style="max-width: 90%; height: auto;" />
+        <p style="font-size: 14px; color: gray;">Here you can see again how to open the Git Bash program for your folder</p>
+    </div>
+    <ol start="2">
+        <li>
+            <strong>Staged the changes:</strong> 
+            We used the following command to add all modified files to the staging area:
+            <pre><code>git add .</code></pre>
+        </li>
+        <li>
+            <strong>Committed the changes:</strong> 
+            To keep track of what was updated, we wrote a descriptive commit message using the following command:
+            <pre><code>git commit -m "Updated the website layout and added a new section"</code></pre>
+        </li>
+        <li>
+            <strong>Pushed the changes:</strong> 
+            Once committed, we pushed the updates to the GitHub repository using:
+            <pre><code>git push</code></pre>
+        </li>
+        <li>
+            <strong>Verified the updates:</strong> 
+            Finally, we visited the live site to confirm that all the changes had been successfully applied.
+        </li>
+    </ol>
+    <p>With this process, we could update the website and upload it again, without too much fuss.</p>
+</section>
+
+<section>
+    <h3>Final Words</h3>
+    <p>This assignment was a great introduction to building websites and getting hands-on experience with tools like Git and GitHub. It taught me how to structure a project, manage files efficiently, and publish a website live for anyone to see. While it was challenging at times—especially figuring out Git commands—it felt really rewarding to see the website come together.</p>
+    <p>Creating this website gave me a solid foundation for a portfolio that I can use to store and display the assignments I’ll be working on next. It’s satisfying to have a central place to organize everything and show my progress throughout the course.</p>
+</section>
+
+
+
+
+							
 
 
 							</section>
