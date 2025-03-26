@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <!--
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -6,7 +6,7 @@
 -->
 <html lang="en">
 	<head>
-		<title>Assignment 2 - Placeholder</title>
+		<title>Assignment 3</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -14,23 +14,21 @@
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
-
 			<!-- Header -->
 			<header id="header">
 				<h1 id="logo"><a href="index.html">Eliot Robertet</a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#">Assignments</a>
-								<ul>
-									<li><a href="Assignment_1.html">Assignment 1</a></li>
-									<li><a href="Assignment_2.html">Assignment 2</a></li>
-									<li><a href="Assignment_3.html">Assignment 3</a></li>
-									
-								</ul>
-							</li>
-							<li><a href="Eliot_Robertet_CV.pdf">Curriculum Vitae</a></li>
+						<li>
+							<a href="#">Assignments</a>
+							<ul>
+								<li><a href="Assignment_1.html">Assignment 1</a></li>
+								<li><a href="Assignment_2.html">Assignment 2</a></li>
+								<li><a href="Assignment_3.html">Assignment 3</a></li>
+							</ul>
+						</li>
+						<li><a href="Eliot_Robertet_CV.pdf">Curriculum Vitae</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -39,8 +37,183 @@
 			<div id="main" class="wrapper style1">
 				<div class="container">
 					<header class="major">
-						<h2>Assignment 3</h2>
-						<p>404 Page Not Found: Haven't started this assignment yet ;)</p>
+						<section id="introduction">
+							<h2>Individual Project: 3D Printing and Design Constraints</h2>
+							<p>
+								The objective of this project was to design a model for 3D printing that could not be
+								easily manufactured using subtractive methods. Before printing the final model, tests
+								were conducted on a 3D printer to determine design rules and constraints. The process
+								also included analyzing the results and documenting key lessons learned.
+							</p>
+							<p>
+								The printed object had to be within the limit of 100g of plastic (as per the slicer
+								estimate), and an additional requirement was to 3D scan an object. The available tools
+								for the project included the Prusa MK3+ and the Creality CR-10 MAX printers, along with
+								software such as Tinkercad and Fusion 360 for design.
+							</p>
+							<h3>3D printing</h3>
+							<p>
+								For this project, I chose to design and 3D print a robotic arm, which was part of
+								another assignment in a different class. The complexity of the design made it a suitable
+								challenge for additive manufacturing, as it includes intricate joints and structures
+								that would be difficult or impossible to produce with subtractive methods.
+							</p>
+							<p>Below, you can explore an interactive 3D model of the entire robotic arm assembly.</p>
+
+							<div class="row aln-center">
+								<iframe
+									src="https://a360.co/4ksbdXB"
+									width="1024"
+									height="768"
+									title="Interactive Fusion 360 Model"
+									style="border: none"
+									allowfullscreen="true"
+									webkitallowfullscreen="true"
+									mozallowfullscreen="true">
+								</iframe>
+							</div>
+
+							<p>
+								And here is the interactive 3D model of the arm that I printed as part of this
+								assignment:
+							</p>
+
+							<div class="row aln-center">
+								<iframe
+									src="https://a360.co/3DKfVPS"
+									width="1024"
+									height="768"
+									title="Interactive Fusion 360 Model"
+									style="border: none"
+									allowfullscreen="true"
+									webkitallowfullscreen="true"
+									mozallowfullscreen="true">
+								</iframe>
+							</div>
+							<p>
+								As you can see the arm has some funky things attached to it. The frame to the side of it
+								is an attachment for a 24v fan. The little hook that is there too is made to hold a
+								temperature sensor. Both of these are neccesary for the assignment for the other course.
+							</p>
+
+							<p>
+								I also added holes and cut-throughs to cut down on weight and add a possible future
+								insert point for axles and other stuff. On the right side I also added a press fit joint
+								so that I could fit the arm to the gear that drives it. I offset it by 1mm so that I
+								would be certain the two components would fit.
+							</p>
+
+							<p>
+								Here is the part just before it finishes, we added print supports so as to make sure
+								there were no overhang problems. We also used organic supports to cut down on weight and
+								save material.
+							</p>
+
+							<video width="640" height="360" controls>
+								<source src="images/3dprints/Lil_arm_print.MP4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+
+							<img
+								src="images/3dprints/Support_lil.JPEG"
+								alt="Aligned fusion 360 file"
+								style="max-width: 90%; height: auto" />
+							<p style="font-size: 14px; color: gray; margin-top: 10px">
+								Organic support holding up the frame for the fan. Very clever way to avoid overhang
+								failure.
+							</p>
+
+							<img
+								src="images/3dprints/Supports_lil.JPEG"
+								alt="Aligned fusion 360 file"
+								style="max-width: 90%; height: auto" />
+							<p style="font-size: 14px; color: gray; margin-top: 10px">
+								Organic support filling in the press fit slot so as to avoid overhang failure.
+							</p>
+
+							<img
+								src="images/3dprints/Supports_lil2.JPEG"
+								alt="Aligned fusion 360 file"
+								style="max-width: 90%; height: auto" />
+							<p style="font-size: 14px; color: gray; margin-top: 10px">
+								Another picture just for a better angle.
+							</p>
+
+							<p>
+								After having fitted the newly printed arm to the rest of the robot assembly we started
+								testing.
+							</p>
+
+							<video width="640" height="360" controls>
+								<source src="images/3dprints/Assembly.MP4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+
+							<video width="640" height="360" controls>
+								<source src="images/3dprints/Little_motor_working.MP4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+
+							<p>
+								At first the robot arm seemed to handle fine. It was light enough for the little stepper
+								motor to hold it. But when we started to add the extra weight of the fan, temperature
+								sensor, the rgb sensor and all of the attached wires, the motor started skipping. 3 Days
+								were spent on trying to make the robot work with an underpowered stepper motor. Alas we
+								caved in, and opted to an emergency fix.
+							</p>
+
+							<p>
+								I printed a housing for a bigger stepper motor that could be mounted to the side of the
+								arm. That way we could attain the much needed torque upgrade without a lot of fuss. The
+								housing was attached by sliding into the arm through the available holes and glued in.
+								Then the motor was snuggly slid into the housing and then taped to the arm to enhance
+								stability. After that improvement the entire robot worked as intended, although it was
+								not as pretty as before. A video demonstrating the robot can be seen down below.
+							</p>
+
+							<video width="640" height="360" controls>
+								<source src="images/3dprints/FINAL_ASSEMBLY.MP4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+
+							<h3>3D scanning</h3>
+							<p>Here I took the liberty to scan a couple of things with the app Scaniverse.</p>
+
+							<p>Below is an interactive 3D scan model of VR-2's bathroom.</p>
+
+							<model-viewer
+								src="images/3dprints/Scaniverse 2024-04-17 142800.glb"
+								alt="3D Scanned Model"
+								auto-rotate
+								camera-controls
+								style="width: 100%; height: 600px; background-color: #f4f4f4"
+								ar>
+							</model-viewer>
+
+							<p>
+								Here you can see that the LIDAR accidentally picked up on my reflection in the mirror.
+								Which is kind of cool, since it made a mirror 3d in a way.
+							</p>
+
+							<p>Here is my friend Svavar who had to keep incredibly still while I scanned him.</p>
+
+							<video width="640" height="360" controls>
+								<source src="images/3dprints/Scaniverse 2024-04-17 161008.MP4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+
+							<p>And here I scanned my beenie, it came out alright.</p>
+
+							<video width="640" height="360" controls>
+								<source src="images/3dprints/3dscan.MP4" type="video/mp4" />
+								Your browser does not support the video tag.
+							</video>
+
+							<!-- Load Model Viewer -->
+							<script
+								type="module"
+								src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+						</section>
 					</header>
 				</div>
 			</div>
@@ -48,15 +221,30 @@
 			<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/eliot-robertet" class="icon brands alt fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/EliotRobertet" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-					<li><a href="mailto:eliot210203@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/eliot-robertet"
+							class="icon brands alt fa-linkedin-in"
+							target="_blank"
+							><span class="label">LinkedIn</span></a
+						>
+					</li>
+					<li>
+						<a href="https://github.com/EliotRobertet" class="icon brands alt fa-github" target="_blank"
+							><span class="label">GitHub</span></a
+						>
+					</li>
+					<li>
+						<a href="mailto:eliot210203@gmail.com" class="icon solid alt fa-envelope"
+							><span class="label">Email</span></a
+						>
+					</li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Untitled. All rights reserved.</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</footer>
-
 		</div>
 
 		<!-- Scripts -->
@@ -68,6 +256,5 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
